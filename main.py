@@ -1,7 +1,10 @@
 from typing import List
 
 def even_list(int_list : List[int]) -> List[int]:
-    pass
+    for x in int_list:
+        if(x%2 == 1):
+            int_list.remove(x)
+    return int_list
 
 def sum_of_squares_of_even(even_int_list : List[int]) -> int:
     pass
